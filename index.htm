@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>  
+<html>
+    <head>
+        <link rel="stylesheet" href="riskstyle.css">
+        <style>
+            body {
+              font-family: Verdana, sans-serif;
+            }
+        </style>
+    </head>
+    <body>  
+        <div class="content">
+            
+            <h1>Accuracy of risk perception and efficacy beliefs regarding lifestyle change</h1>
+            
+            <p>Knowing to what extent patients have an accurate perception of their risk, and also their attitude towards their own ability to influence their risk and beliefs about the effectiveness of lifestyle change,
+            can provide a context for understanding and empowering the patient.</p>
+            <p>This tool contains four questions to support clinicians in assessing accuracy of CVD risk perception and efficacy beliefs in patients to enhance shared decision making.</p>
+            <hr />
+            <form method="post" action="risk.php">
+              1. How do you estimate your risk of getting a cardiovascular disease within the next 10 years (7-point scale, with 1 = very low, 7 = very high)?<br>
+              Enter the patient's self-rated risk (1-7): <input type="number" min="1" max="7" name="patient_estimate">
+              <br><br>
+              2. Enter the patient's risk according to SCORE2: <input type="number" min="0" max="99" step=".01" name="patient_score"> %
+              <br><br>
+              3. How do you assess your own capability to make lifestyle changes (7-point scale, with 1 = very low, 7 = very high)?<br>
+              Enter the patient's self-efficacy (1-7): <input type="number" min="1" max="7" name="patient_selfefficacy">
+              <br><br>
+              4. How effective do you think lifestyle changes would be (e.g. changing your diet or increasing your physical activity) in influencing your risk of cardiovascular disease (1-7)?: <input type="number" min="1" max="7" name="patient_responseefficacy">
+              <br><br>
+               
+              <input type="submit" name="submit" value="Submit">  
+            </form>
+        
+        </div>
+    </body>
+</html>

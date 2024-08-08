@@ -1,0 +1,192 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="riskstyle.css">
+        <style>
+            body {
+              font-family: Verdana, sans-serif;
+            }
+        </style>
+    </head>
+<body>
+<div class="content">
+    
+<h2>Accuracy of risk perception</h2>
+
+<br>
+
+<table style="width:100%">
+    <tr>
+        <td>Patient</td>
+        <td id="pe1"></td>
+        <td id="pe2"></td>
+        <td id="pe3"></td>
+        <td id="pe4"></td>
+        <td id="pe5"></td>
+        <td id="pe6"></td>
+        <td id="pe7"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td class="ruta">< 2.5%</td>
+        <td class="ruta">2.5% - <5%</td>
+        <td class="ruta">5% - <7.5%</td>
+        <td class="ruta">7.5% - <10%</td>
+        <td class="ruta">10% - <15%</td>
+        <td class="ruta">15% - <25%</td>
+        <td class="ruta">>= 25%</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td class="ruta"><img src="Green 1.png" alt="Green 1" width="57" height="24" /></td>
+        <td class="ruta"><img src="Green 2.png" alt="Green 2" width="57" height="24" /></td>
+        <td class="ruta"><img src="Yellow 3.png" alt="Yellow 3" width="57" height="24" /></td>
+        <td class="ruta"><img src="Orange 4.png" alt="Orange 4" width="57" height="24" /></td>
+        <td class="ruta"><img src="Red 5.png" alt="Red 5" width="57" height="24" /></td>
+        <td class="ruta"><img src="Red 6.png" alt="Red 6" width="57" height="24" /></td>
+        <td class="ruta"><img src="Red 7.png" alt="Red 7" width="57" height="24" /></td>
+    </tr>
+    <tr>
+        <td>SCORE2</td>
+        <td id="ps1"></td>
+        <td id="ps2"></td>
+        <td id="ps3"></td>
+        <td id="ps4"></td>
+        <td id="ps5"></td>
+        <td id="ps6"></td>
+        <td id="ps7"></td>
+    </tr></table>
+
+<br>
+
+<h2>Self-efficacy</h2>
+
+<br>
+
+<table style="width:100%">
+    <tr>
+        <td></td>
+        <td id="se1"></td>
+        <td id="se2"></td>
+        <td id="se3"></td>
+        <td id="se4"></td>
+        <td id="se5"></td>
+        <td id="se6"></td>
+        <td id="se7"></td>
+    </tr
+    <tr>
+        <td></td>
+        <td class="ruta">Very low<br>1</td>
+        <td class="ruta_vab">2</td>
+        <td class="ruta_vab">3</td>
+        <td class="ruta_vab">4</td>
+        <td class="ruta_vab">5</td>
+        <td class="ruta_vab">6</td>
+        <td class="ruta">Very high<br>7</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td class="ruta"><img src="Red 7.png" alt="Röd 1" width="57" height="24" /></td>
+        <td class="ruta"><img src="Red 6.png" alt="Röd 2" width="57" height="24" /></td>
+        <td class="ruta"><img src="Red 5.png" alt="Röd 3" width="57" height="24" /></td>
+        <td class="ruta"><img src="Orange 4.png" alt="Orange 4" width="57" height="24" /></td>
+        <td class="ruta"><img src="Yellow 3.png" alt="Gul 5" width="57" height="24" /></td>
+        <td class="ruta"><img src="Green 2.png" alt="Grön 6" width="57" height="24" /></td>
+        <td class="ruta"><img src="Green 1.png" alt="Grön 7" width="57" height="24" /></td>
+    </tr>
+</table>
+
+
+<br>
+
+<h2>Response efficacy</h2>
+
+<br>
+
+<table style="width:100%">
+    <tr>
+        <td></td>
+        <td id="re1"></td>
+        <td id="re2"></td>
+        <td id="re3"></td>
+        <td id="re4"></td>
+        <td id="re5"></td>
+        <td id="re6"></td>
+        <td id="re7"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td class="ruta">Very low<br>1</td>
+        <td class="ruta_vab">2</td>
+        <td class="ruta_vab">3</td>
+        <td class="ruta_vab">4</td>
+        <td class="ruta_vab">5</td>
+        <td class="ruta_vab">6</td>
+        <td class="ruta">Very high<br>7</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td class="ruta"><img src="Red 7.png" alt="Röd 1" width="57" height="24" /></td>
+        <td class="ruta"><img src="Red 6.png" alt="Röd 2" width="57" height="24" /></td>
+        <td class="ruta"><img src="Red 5.png" alt="Röd 3" width="57" height="24" /></td>
+        <td class="ruta"><img src="Orange 4.png" alt="Orange 4" width="57" height="24" /></td>
+        <td class="ruta"><img src="Yellow 3.png" alt="Gul 5" width="57" height="24" /></td>
+        <td class="ruta"><img src="Green 2.png" alt="Grön 6" width="57" height="24" /></td>
+        <td class="ruta"><img src="Green 1.png" alt="Grön 7" width="57" height="24" /></td>
+    </tr>
+</table>
+
+<br>
+<p>&copy; 2024 Elin M Andersson</p>
+<p><a href="index.htm">New calculation</a></p>
+</div>
+
+<script>
+  let pe = getParameterByName("pe");
+  document.getElementById("pe" + pe).innerHTML = '<img src="Blue pil ned.png" alt="Pil ned" width="37" height="68" />';
+
+  let ps = getParameterByName("ps");
+  let psn = Number(ps);
+  let patientbucket = 0;
+  if (psn < 2.5) {
+    patientbucket = 1;
+  }
+  else if (psn < 5) {
+    patientbucket = 2;
+  }
+  else if (psn < 7.5) {
+    patientbucket = 3;
+  }
+  else if (psn < 10) {
+    patientbucket = 4;
+  }
+  else if (psn < 15) {
+    patientbucket = 5;
+  }
+  else if (psn < 25) {
+    patientbucket = 6;
+  }
+  else {
+    patientbucket = 7;
+  }
+    
+  document.getElementById("ps" + patientbucket).innerHTML = '<img src="Blue pil upp.png" alt="Pil upp" width="37" height="68" />';
+
+  let se = getParameterByName("se");
+  document.getElementById("se" + se).innerHTML = '<img src="Blue pil ned.png" alt="Pil ned" width="37" height="68" />';
+
+  let re = getParameterByName("re")
+  document.getElementById("re" + re).innerHTML = '<img src="Blue pil ned.png" alt="Pil ned" width="37" height="68" />';
+
+    function getParameterByName(name, url = window.location.href) {
+        name = name.replace(/[\[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+</script>
+
+
+</body>
+</html>

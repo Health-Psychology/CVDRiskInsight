@@ -17,19 +17,19 @@
             can provide a context for understanding and empowering the patient.</p>
             <p>This tool contains four questions to support clinicians in assessing accuracy of CVD risk perception and efficacy beliefs in patients to enhance shared decision making.</p>
             <hr />
-            <form method="post" action="risk.php">
+            <form method="get" action="risk.htm">
               1. How do you estimate your risk of getting a cardiovascular disease within the next 10 years (7-point scale, with 1 = very low, 7 = very high)?<br>
-              Enter the patient's self-rated risk (1-7): <input type="number" min="1" max="7" name="patient_estimate">
+              Enter the patient's self-rated risk (1-7): <input type="number" min="1" max="7" name="pe">
               <br><br>
-              2. Enter the patient's risk according to SCORE2: <input type="number" min="0" max="99" step=".01" name="patient_score"> %
+              2. Enter the patient's risk according to SCORE2: <input type="number" min="0" max="99" step=".01" name="ps"> %
               <br><br>
               3. How do you assess your own capability to make lifestyle changes (7-point scale, with 1 = very low, 7 = very high)?<br>
-              Enter the patient's self-efficacy (1-7): <input type="number" min="1" max="7" name="patient_selfefficacy">
+              Enter the patient's self-efficacy (1-7): <input type="number" min="1" max="7" name="se">
               <br><br>
-              4. How effective do you think lifestyle changes would be (e.g. changing your diet or increasing your physical activity) in influencing your risk of cardiovascular disease (1-7)?: <input type="number" min="1" max="7" name="patient_responseefficacy">
+              4. How effective do you think lifestyle changes would be (e.g. changing your diet or increasing your physical activity) in influencing your risk of cardiovascular disease (1-7)?: <input type="number" min="1" max="7" name="re">
               <br><br>
                
-              <input type="submit" name="submit" value="Submit">  
+              <input type="submit" value="Submit">  
             </form>
         
         </div>

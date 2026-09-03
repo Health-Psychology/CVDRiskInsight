@@ -1,0 +1,20 @@
+.content {
+  max-width: 800px;
+  margin: auto;
+}
+.ruta {
+  border: 1px solid grey;
+  border-collapse: collapse;
+}
+.ruta_vab {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  vertical-align: bottom;
+}
+body {
+    font: normal 12px Verdana, Arial, sans-serif;
+}
+td {
+    width: 12.5%;
+    text-align: center;
+}
